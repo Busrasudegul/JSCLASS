@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Ders</title>
+    <script>
+        function myFunction1 () {
+            document.getElementById('demo2').innerHTML = 'Head içindeki script çalıştı'
+        }
+    </script>
+</head>
+<body>
+    <h2>Javascrit ile neler yapılabilir?</h2>
+
+    <p id="demo">HTML içeriğini değiştirebilir.</p>
+     <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'Merhaba Javascript'"
+      >Tıkla ve değiştir.</button>
+
+      <p id="stil">HTML özelliklerini değiştirebilir (attribute)</p>
+      <button type="button" onclick="document.getElementById('stil').style.fontSize='35px'">Tıkla ve stil değiştir</button>
+    <br>
+      <button type="button" onclick="document.getElementById('element').style.display='none'">Gizle</button>
+      <button type="button" onclick="document.getElementById('element').style.display='block'">göster</button>
+      <p id="element">HTML elementi gizleyebilir/gösterebilir</p>
+
+      <p id="demo2">Değişecek paragraf...</p>
+      <button type="button" onclick="myFunction1()">Head</button>
+      <button type="button" onclick="myFunction2()">Body</button>
+      <button type="button" onclick="myFunction3()">External</button>
+
+      <script>
+        function myFunction2 () {
+            document.getElementById('demo2').innerHTML = 'Body içerisindeki script çalıştı'
+            document.getElementById('demo2').style.backgroundColor = 'red'
+        }
+      </script>
+      <script src="javascript.js"></script>
+      <script>
+        // console.log(5 + 4)
+        // alert(5 + 5)
+        // document.write(5 + 7)
+      </script>
+
+</body>
+</html>
