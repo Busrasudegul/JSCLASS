@@ -167,6 +167,7 @@ function myDisplayer(some){
 }
 function myCalculator(num1,num2,myCallback){
     let sum = num1 + num2;
+    console.log("calculator fonksiyonu çalıştı")
     myCallback(sum)
 }
 myCalculator(2,3,myDisplayer)
